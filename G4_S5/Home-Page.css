@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(87, 82, 82);
+    color: white;
+    padding: 15px;
+}
+
+nav{
+    background-color: rgb(119, 117, 117);
+    color: white;
+    
+}
+
+#nav li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+#sm1,#sm2{
+    display: none;
+}
+
+#nav li:hover{
+    background-color: black;
+}
+
+#nav li:nth-child(2):hover #sm1,
+#nav li:nth-child(3):hover #sm2
+{
+    display: block;
+}
+
+#nav li:nth-child(2):active #sm1,
+#nav li:nth-child(3):active #sm2
+{
+    display: block;
+}
+
+#sm1{
+    position: absolute;
+    width: auto;
+    max-width: 145px;
+    color: rgb(45, 99, 181);
+    top: 94.5px;
+    left: 123px;
+    background-color: rgb(231, 231, 231);
+    padding: 0%;
+    z-index: 1;
+}
+
+#sm2{
+    position: absolute;
+    width: auto;
+    max-width: 130px;
+    color: rgb(45, 99, 181);
+    top: 94.5px;
+    left: 262.5px;
+    background-color: rgb(231, 231, 231);
+    padding: 0%;
+    padding-left: 5px;
+    z-index: 1;
+}
+
+#sm1 li:hover,
+#sm2 li:hover {
+    background-color: wheat;
+}
+
+#sm1 li,
+#sm2 li{
+    display: block;
+}
+
+section>p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.products{
+    width: 160px;
+    height: 250px;
+    padding: 10px;
+    display: inline-block;
+    background-color: whitesmoke;
+    box-shadow: 1px;
+    border-radius: 3px;
+    line-height: 30px;
+    margin: 20px 3px 20px 8px;
+}
+
+.products p{
+    color:steelblue;
+}
+
+#head {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.cart{
+    min-width:140 px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color:whitesmoke;
+    border-color:gray ;
+}
+
+.cart a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+
+.pro_img{
+    width: 150px;
+    height: 100px;
+    padding: 5px;   
+}
+
+.cart:active{
+    background-color: rgb(250, 234, 230) ;
+    border-color:rgb(0, 255, 76);
+    color: black;
+}
+
+.products:hover{
+    scale:110%;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+@media only screen and (min-wid:240px){
+    #sm1{
+        top: 90px;
+        left:80px;
+    }
+    
+    #sm2{
+        top:130px;
+        left:0px;
+    }
+}
+
+@media only screen and (min-wid:240px){
+    #sm1{
+        top: 90px;
+        left:80px;
+    }
+    
+    #sm2{
+        top:130px;
+        left:0px;
+    }
+
+    .products{
+        width: 175px;
+        height: 200px;
+        margin: 20px 3px 20px 8px;
+    }
+
+    .products:hover {
+        scale:100%;
+    }
+    .pro_img{
+        width:160px;
+    }
+}
+
+@media only screen and (min-width:500px){
+    h1{
+        padding:17px;
+        font-size: 32;
+    }
+    #sm1,
+    #sm2{
+        top: 109px;
+    }
+    h4{
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    h1{
+        padding: 18px;
+        font-size: 34px;
+    }
+    #sm1,
+    #sm2{
+        top:116px;
+    }
+}
