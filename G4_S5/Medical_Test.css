@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
 }
 
@@ -7,7 +7,7 @@ h1 {
     padding: 15px;
     font-size: 32px;
     color: white;
-    background-color:  rgb(87, 82, 82);
+    background-color: rgb(87, 82, 82);
 }
 
 .container {
@@ -49,11 +49,11 @@ form {
     position: relative;
 }
 
-label{
+label {
     font-size: 18px;
 }
 
-input{
+input {
     color: black;
     margin-top: 5px;
     padding-left: 10px;
@@ -64,7 +64,7 @@ input{
 }
 
 .contact_detail input,
-.contact_detail label{
+.contact_detail label {
     background-color: white;
     color: black;
     width: 90%;
@@ -94,7 +94,7 @@ input{
     font-size: 12px;
 }
 
-input:focus{
+input:focus {
     border-color: white;
 }
 
@@ -103,17 +103,17 @@ input:focus{
     padding-top: 10px;
 }
 
-.container p{
+.container p {
     width: 45%;
     font-size: larger;
     font-weight: bold;
 }
 
-h5{
+h5 {
     width: 45%;
 }
 
-button{
+button {
     font-size: large;
     color: white;
     background-color: blueviolet;
@@ -123,18 +123,18 @@ button{
     width: 95px;
     border: none;
     border-radius: 5px;
-    bottom: 0; 
+    bottom: 0;
 }
 
-#reset{
+#reset {
     margin-left: 30%;
 }
 
-#submit{
+#submit {
     margin-left: 55%;
 }
 
-.Lab_test{
+.Lab_test {
     margin: 10px 0px 0px 10px;
     width: 50%
 }
@@ -151,7 +151,7 @@ button{
     vertical-align: middle;
 }
 
-.Lab_test label{
+.Lab_test label {
     vertical-align: top;
     word-wrap: break-word;
     text-align: left;
@@ -159,48 +159,53 @@ button{
     font-size: 19px;
 }
 
-@media only screen and (min-width:500px){
-    input{
-        width:80%;
+@media only screen and (min-width:500px) {
+    input {
+        width: 80%;
     }
-    h1{
+
+    h1 {
         font-size: 32px;
     }
 
     .contact_detail input,
-    .contact_detail label{
-        height:30px;
+    .contact_detail label {
+        height: 30px;
         font-size: 16px;
     }
 
-    h5{
-        width:60%;
-        font-size:16px;
+    h5 {
+        width: 60%;
+        font-size: 16px;
     }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
     input {
         width: 100%;
     }
-    h1{
-        padding:18px;
+
+    h1 {
+        padding: 18px;
     }
-    .container{
+
+    .container {
         width: 92%;
     }
+
     h5 {
         font-size: 16px;
     }
-    .contact_details select{
-        font-size:16px;
+
+    .contact_details select {
+        font-size: 16px;
     }
 
-    #reset{
+    #reset {
         margin-left: 40%;
     }
-    
-    #submit{
+
+    #submit {
         margin-left: 55%;
     }
 }

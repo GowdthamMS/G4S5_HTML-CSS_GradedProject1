@@ -1,73 +1,79 @@
-*{
+* {
     margin: 0;
+    padding: 0;
 }
 
-h1{
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+h1,
+h4 {
     text-align: center;
     background-color: rgb(87, 82, 82);
     color: white;
     padding: 15px;
 }
 
-nav{
+nav {
     background-color: rgb(119, 117, 117);
     color: white;
-    
+
 }
 
-#nav li{
+#nav li {
     display: inline-block;
     padding: 5px 20px;
 }
 
-#nav li a{
+#nav li a {
     text-decoration: none;
     color: white;
 }
 
-#sm1,#sm2{
+#sm1,
+#sm2 {
     display: none;
 }
 
-#nav li:hover{
+#nav li:hover {
     background-color: black;
 }
 
 #nav li:nth-child(2):hover #sm1,
-#nav li:nth-child(3):hover #sm2
-{
+#nav li:nth-child(3):hover #sm2 {
     display: block;
 }
 
 #nav li:nth-child(2):active #sm1,
-#nav li:nth-child(3):active #sm2
-{
+#nav li:nth-child(3):active #sm2 {
     display: block;
 }
 
-#sm1{
+#sm1 {
+    display: none;
     position: absolute;
     width: auto;
-    max-width: 145px;
-    color: rgb(45, 99, 181);
-    top: 94.5px;
-    left: 123px;
-    background-color: rgb(231, 231, 231);
-    padding: 0%;
+    min-width: 145px;
+    background-color: rgb(211, 207, 207);
+    padding: 0;
     z-index: 1;
+    top: 141px;
+    left: 0px
 }
 
-#sm2{
+#sm2 {
+    display: none;
     position: absolute;
     width: auto;
-    max-width: 130px;
-    color: rgb(45, 99, 181);
-    top: 94.5px;
-    left: 262.5px;
-    background-color: rgb(231, 231, 231);
-    padding: 0%;
-    padding-left: 5px;
+    min-width: 155px;
+    background-color: rgb(186, 186, 186);
+    padding: 0;
     z-index: 1;
+    top: 169px;
+    left: 0px;
 }
 
 #sm1 li:hover,
@@ -76,30 +82,31 @@ nav{
 }
 
 #sm1 li,
-#sm2 li{
+#sm2 li {
     display: block;
 }
 
 section>p {
-    font-size: 18px;
+    font-size: 26px;
     font-weight: bold;
-    padding-left: 5px;
+    padding-left: 9px;
 }
 
-.products{
-    width: 160px;
-    height: 250px;
+.products {
+    width: 175px;
+    /* min-width: 160px; */
+    height: 310px;
     padding: 10px;
     display: inline-block;
     background-color: whitesmoke;
     box-shadow: 1px;
     border-radius: 3px;
     line-height: 30px;
-    margin: 20px 3px 20px 8px;
+    margin: 20px 3px 20px 8px
 }
 
-.products p{
-    color:steelblue;
+.products p {
+    color: steelblue;
 }
 
 #head {
@@ -108,100 +115,102 @@ section>p {
     color: black;
 }
 
-.cart{
-    min-width:140 px;
+.cart {
+    min-width: 140 px;
     text-align: center;
     border: 1px solid;
     border-radius: 5px;
-    background-color:whitesmoke;
-    border-color:gray ;
+    background-color: whitesmoke;
+    border-color: gray;
 }
 
-.cart a{
+.cart a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: orange;
 }
 
-.pro_img{
+.pro_img {
     width: 150px;
     height: 100px;
-    padding: 5px;   
+    padding: 5px;
 }
 
-.cart:active{
-    background-color: rgb(250, 234, 230) ;
-    border-color:rgb(0, 255, 76);
+.cart:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
     color: black;
 }
 
-.products:hover{
-    scale:110%;
+.products:hover {
+    scale: 110%;
 }
 
-footer{
+footer {
     background-color: blueviolet;
 }
 
-@media only screen and (min-wid:240px){
-    #sm1{
-        top: 90px;
-        left:80px;
+
+
+@media only screen and (min-width:235px) {
+
+    #sm1 {
+        top: 95px;
+        left: 78px;
     }
-    
-    #sm2{
-        top:130px;
-        left:0px;
+
+    #sm2 {
+        top: 122px;
+        left: 0px;
     }
+
 }
 
-@media only screen and (min-wid:240px){
-    #sm1{
-        top: 90px;
-        left:80px;
-    }
-    
-    #sm2{
-        top:130px;
-        left:0px;
+
+@media only screen and (min-width:355px) {
+
+    #sm1 {
+        top: 95px;
+        left: 78px;
     }
 
-    .products{
-        width: 175px;
-        height: 200px;
-        margin: 20px 3px 20px 8px;
+    #sm2 {
+        top: 95px;
+        left: 210px;
     }
 
-    .products:hover {
-        scale:100%;
-    }
-    .pro_img{
-        width:160px;
-    }
 }
 
-@media only screen and (min-width:500px){
-    h1{
-        padding:17px;
+@media only screen and (min-width:500px) {
+    h1 {
+        padding: 17px;
         font-size: 32;
     }
-    #sm1,
-    #sm2{
-        top: 109px;
+
+    #sm1 {
+        top: 98px;
+
     }
-    h4{
+
+    #sm2 {
+        top: 98px;
+        left: 202px;
+    }
+
+    h4 {
         padding: 15px;
     }
 }
 
-@media only screen and (min-width:1000px){
-    h1{
+@media only screen and (min-width:1000px) {
+    h1 {
         padding: 18px;
         font-size: 34px;
     }
+
     #sm1,
-    #sm2{
-        top:116px;
+    #sm2 {
+        top: 103px;
     }
 }
